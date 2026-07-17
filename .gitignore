@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse and VS Code
+.classpath
+.project
+.settings/
+.vscode/
+bin/
+
+# Java build products and local dependencies
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+.gradle/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Runtime and editor artifacts
+*.log
+hs_err_pid*
+replay_pid*
+*.tmp
+*.swp
+*.swo
+*~
