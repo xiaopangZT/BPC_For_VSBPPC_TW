@@ -428,8 +428,7 @@ public class VSBPPTW_Solver {
                 return false;
             }
 
-            node.lb = Math.max(CommonUtil.ceilToInt(rmpSolver.objValue), node.lb);
-            node.lb = getEffectiveLowerBound(node.lb);
+			node.lb = getEffectiveLowerBound(Math.max(node.lb, localIntLowerBound));
             if (node.isRoot) {
                 bestSolution.rootColCnt = rmpSolver.patterns.size();
                 bestSolution.LB = Math.max(bestSolution.LB, node.lb);
